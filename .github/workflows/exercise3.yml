@@ -8,5 +8,5 @@ jobs:
     learning-github-actions:
         runs-on: ubuntu-latest
         steps:
-            - name: ping google
-              run: ping google.com -c 4            
+            - name: ping directdevops.blog
+              run: ping directdevops.blog -c 4            
