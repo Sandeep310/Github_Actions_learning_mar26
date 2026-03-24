@@ -10,4 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "print message"
-        run: "echo hello how are you"            
+        run: "echo hello how are you"
+      - name: list environmental variables
+        run: printenv             
+
+#When the user pushes changes to main branch, show all the environmental variables in output
+        
