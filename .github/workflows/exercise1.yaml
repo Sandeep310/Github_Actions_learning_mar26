@@ -1,0 +1,12 @@
+#This workflow should print “hello how are you” when a new change is pushed to main branch
+
+on:
+    push:
+        branches:
+            - main
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            -name: "print message"
+             run: echo "hello how are you"            
