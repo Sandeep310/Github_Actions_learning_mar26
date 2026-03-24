@@ -1,0 +1,13 @@
+#When the user creates a pull request to dev branch execute a new workflow and print thanks for pull request
+
+name: exercise 4
+on:
+   pull_request:
+     branches:
+       - dev
+jobs:
+  learning-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "print message"
+        run: "echo thanks for pull request"       
