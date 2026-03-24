@@ -1,0 +1,12 @@
+#when the user pushes the changes to dev branch then run ping google.com 4 times
+name: exercise 3
+on:
+    push:
+        branches:
+            - dev
+jobs:
+    learning-github-actions:
+        runs-on: ubuntu-latest
+        steps:
+            - name: ping google
+              run: ping google.com -c 4            
